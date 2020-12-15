@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>
+Favourites
+</title>
+</head>
+<style>
+#fav
+{
+  color: saddlebrown;
+  font-size: 25PX;
+  font-family: Algerian;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 20PX;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#JWW
+{
+  height: 100PX;
+  width: 180PX;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: grey;
+}
+
+.active {
+  background-color: #FF1493;
+}
+}
+</style>
+<body bgcolor= orange>
+<right>
+<img src="Jeevika's web world.jpg" id= "JWW"> <br> <br>
+</right>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a href="https://jeevu-22.github.io/Jeevika/index.html"><i class="fa fa-home"></i>Home</a>
+  <a class="active" href="https://jeevu-22.github.io/Favourites/Favourites.html"><i class="fa fa-globe"></i>Favourites</a>
+  <a href="https://jeevu-22.github.io/Hobbies/Hobbies.html"><i class="fa fa-globe"></i>Hobbies</a>
+  <a href="https://jeevu-22.github.io/Achievements/Achievements.html"><i class="fa fa-globe"></i> Achievements</a>
+</div>
+<center>
+<h4 id= "fav"> Hover over the image below to know about my favourites. </h4><br> <br>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Jeevu 2.jpg" alt="avatar" style="width:500px;height:500px;">
+    </div>
+    <div class="flip-card-back">
+      <p> Name - Jeevika Umesh </p>
+      <p> Favourite food - Burger</p>
+      <p> Favourite book - Charlie and the chocolate factory </p>
+      <p> Favourite authors - Roald Dahal and Charles Dickens </p>
+      <p> Favourite quote - Where there is a will there is a way. </p>
+      <p> Favourite colour - Yellow </p>
+      <p> Favourite movie - Bahubali (both the parts)</p>
+    </div>
+  </div>
+</div> <br> <br>
+</center>
+</body>
+</html>
